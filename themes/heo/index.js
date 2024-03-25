@@ -62,16 +62,7 @@ const LayoutBase = props => {
   const headerSlot = (
     <header>
       {/* 顶部导航 */}
-      <NavBar {...props} />
-
-      {/* 通知横幅 */}
-      {router.route === '/'
-        ? <>
-            <NoticeBar />
-            <Hero {...props} />
-        </>
-        : null}
-      {fullWidth ? null : <PostHeader {...props} />}
+      <NavBar {...props} />      
     </header>
   )
 
@@ -141,7 +132,7 @@ const LayoutIndex = props => {
   return (
       <div id="post-outer-wrapper" className="px-5 md:px-0">
         {/* 文章分类条 */}
-        <CategoryBar {...props} />
+        {/* <CategoryBar {...props} /> */}
         {siteConfig('POST_LIST_STYLE') === 'page'
           ? (
             <BlogPostListPage {...props} />

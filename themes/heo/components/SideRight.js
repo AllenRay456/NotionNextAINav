@@ -35,7 +35,7 @@ export default function SideRight(props) {
   return (
         <div id='sideRight' className='hidden xl:block w-72 space-y-4 h-full'>
 
-            <InfoCard {...props} className='w-72' />
+            {/* <InfoCard {...props} className='w-72' /> */}
 
             <div className='sticky top-20 space-y-4'>
 
@@ -47,7 +47,7 @@ export default function SideRight(props) {
                 )}
 
                 {/* 联系交流群 */}
-                <TouchMeCard />
+                {/* <TouchMeCard /> */}
 
                 {/* 最新文章列表 */}
                 <div className={'border dark:border-gray-700 dark:bg-[#1e1e1e] dark:text-white rounded-xl lg:p-6 p-4 hidden lg:block bg-white'}>
@@ -56,14 +56,14 @@ export default function SideRight(props) {
 
                 {rightAreaSlot}
 
-                <FaceBookPage />
-                <Live2D />
+                {/* <FaceBookPage /> */}
+                {/* <Live2D /> */}
 
                 {/* 标签和成绩 */}
                 <Card className={'bg-white dark:bg-[#1e1e1e] dark:text-white'}>
                     <TagGroups tags={tagOptions} currentTag={currentTag} />
                     <hr className='mx-1 flex border-dashed relative my-4' />
-                    <AnalyticsCard {...props} />
+                    {/* <Analyti/csCard {...props} /> */}
                 </Card>
             </div>
 
